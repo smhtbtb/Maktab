@@ -12,3 +12,4 @@ for i in l:
         print(min(l[0], l[1]) + min(l[2], l[3]) + min(l[4], l[5]))
         break
 
+print("hi")

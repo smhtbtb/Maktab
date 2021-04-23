@@ -1,0 +1,10 @@
+DEBUG:root:a/b= 2/0
+INFO:root:Divide by zero!
+WARNING:root:Person created! ali alavi
+CRITICAL:root:Invalid age!
+WARNING:root:Person created! gholi gholami
+DEBUG:root:a/b= 2/0
+INFO:root:Divide by zero!
+WARNING:root:Person created! ali alavi
+CRITICAL:root:Invalid age!
+WARNING:root:Person created! gholi gholami

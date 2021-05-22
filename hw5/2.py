@@ -11,8 +11,16 @@ with open('input-q-2.txt') as f:
         else:
             txt1 += ('[' + f[i] + '].')
 
+    result = ''
+    txt1 = txt1.split('. ')
+    for i in range(len(txt1)):
+        if i < len(txt1)-1:
+            result += (txt1[i] + '.\n')
+        else:
+            result += txt1[i]
+
 with open('output-q-2-1.txt', 'a+') as res:
-    res.write(txt1)
+    res.write(result)
 
 ################################################################
 
@@ -37,12 +45,13 @@ for i in txt2:
         num_list.append(i)
         num_count += 1
     elif i.isalpha():
+        # print(words_list)
         words_list.append(i)
         words_count += 1
 # print(num_list)
-# print(num_count)
+# print(words_list)
 
-with open('output-q-2-2.txt', 'a+') as res2:
+with open('output-q-2-2.txt', 'w') as res2:
     res2.write(str(words_list) + '\n')
     res2.write(str(words_count) + '\n')
     res2.write(str(num_list) + '\n')
@@ -63,11 +72,11 @@ with open('input-q-2.txt') as f:
 
 txt3 = f.strip().split()
 i = 0
-r = re.findall('([A-Z][a-z]+)', str(txt3))
+r = re.findall('([A-Z][a-zA-Z]+)', str(txt3))
 for i in txt3:
     if i.isupper():
         r.append(i)
-print(str(r))
+# print(str(r))
 
-with open('output-q-2-3.txt', 'a+') as res3:
+with open('output-q-2-3.txt', 'w') as res3:
     res3.write(str(r))

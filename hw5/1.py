@@ -7,6 +7,7 @@ with open('input-q-1.txt') as f:
     txt = txt.replace('five', '5')
     txt = txt.replace('six', '6')
     txt = txt.replace('seven', '7')
+    txt = txt.replace('eighteen', '18')
     txt = txt.replace('eight', '8')
     txt = txt.replace('nine', '9')
     txt = txt.replace('ten', '10')
@@ -17,11 +18,10 @@ with open('input-q-1.txt') as f:
     txt = txt.replace('fifteen', '15')
     txt = txt.replace('sixteen', '16')
     txt = txt.replace('seventeen', '17')
-    txt = txt.replace('eighteen', '18')
     txt = txt.replace('nineteen', '19')
     txt = txt.replace('twenty', '20')
 
 
-res = open('output-q-1.txt', 'x')
+res = open('output-q-1.txt', 'w')
 res.write(txt)
 res.close()

@@ -1,6 +1,7 @@
 import logging
 
-logging.basicConfig(filename='person.log', filemode='a', level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG)
+# logging.FileHandler('person.log', mode='a', encoding=None, delay=False)
 
 
 class Person:
@@ -22,4 +23,14 @@ class Person:
             logging.critical("Invalid age!")
         self._age = 0
 
+    logger = logging.getLogger('person.py')
+    logger.setLevel(logging.DEBUG)
+
+    handler = logging.FileHandler("person.log")
+    handler.setLevel(logging.DEBUG)
+
+    formatter = logging.Formatter("%(asctime)s-%(name)-10s-%(levelname)-16s-%(message)s")
+    handler.setFormatter(formatter)
+
+    logger.addHandler(handler)
 

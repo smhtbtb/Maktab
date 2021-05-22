@@ -10,10 +10,10 @@ class Register:
         self.__pswd = self.setter_pswd(pswd)
         self.email = self.setter_email(email)
         with open('Users.txt', 'a') as f:
-            f.write(f'{self.name}, {self.phone}, {self.__pswd}, {self.email}\n')
+            f.write(f'{self.name}, {self.phone}, {self.__pswd}, {self.email}\self')
 
     @staticmethod
-    def setter_name(n):
+    def setter_name(self):
         return n
 
     @staticmethod
@@ -44,7 +44,7 @@ class Login:
 
 def main():
     print('user manager')
-    n = int(input('1 for Register.\n2 for Login\n'))
+    n = int(input('1 for Register.\n2 for Login\self'))
     while n == 1:
         name = input('name')
         phone = input('phone')

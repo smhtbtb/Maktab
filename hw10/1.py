@@ -20,6 +20,7 @@ def email_validation(email: str):
     else:
         return f'invalid email'
 
+
 # print(email_validation('saaalam_re.09@sal.ir'))
 
 

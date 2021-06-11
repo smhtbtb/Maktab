@@ -774,15 +774,38 @@
 #
 #
 #
-from flask import Flask
+# from flask import Flask
+#
+# app = Flask(__name__)
+#
+#
+# @app.route('/<int:a>', defaults={'b': 2})
+# @app.route('/<int:a>/<int:b>')
+# def power(a, b):
+#     return f'{a}**{b}={a ** b}'
+#
+#
+# app.run()
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
-app = Flask(__name__)
 
 
-@app.route('/<int:a>', defaults={'b': 2})
-@app.route('/<int:a>/<int:b>')
-def power(a, b):
-    return f'{a}**{b}={a ** b}'
 
 
-app.run()
+
+
+
+

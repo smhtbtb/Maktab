@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>test</title>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-sm-3 bg-primary">
             <div class="container-fluid" id="sidebar-content">
                 <div class="row text-center" id="pic-job-apps">
-                    <img src="me.jpg" class="rounded-circle img-fluid my-4" alt="Cinque Terre">
+                    <img src="../me.jpg" class="rounded-circle img-fluid my-4" alt="Cinque Terre">
                     <h3>Seyyed Mohammad Hosein Tabatabaei</h3>
                     <h6>Python/Django Developer</h6><br>
 
@@ -50,31 +51,91 @@
                 <div class="row" id="vertical-navbar">
                     <nav class="nav flex-column mx-4 my-3">
 
-                        <a class="nav-link active text-dark" href="#">ABOUT ME</a>
-                        <a class="nav-link text-dark" href="#">EXPERIENCE</a>
-                        <a class="nav-link text-dark" href="#">EDUCATION</a>
-                        <a class="nav-link text-dark" href="#">WORKS</a>
-                        <a class="nav-link text-dark" href="#">CONTACT</a>
+                        <a class="nav-link active text-dark" href="https://google.com">ABOUT ME</a>
+                        <a class="nav-link text-dark" href="https://google.com">EXPERIENCE</a>
+                        <a class="nav-link text-dark" href="https://google.com">EDUCATION</a>
+                        <a class="nav-link text-dark" href="https://google.com">WORKS</a>
+                        <a class="nav-link text-dark" href="https://google.com">CONTACT</a>
 
                     </nav>
                 </div>
 
 
             </div>
-            <footer class="bg-light text-center text-lg-start">
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2020 Copyright:
-                    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+
+        </div>
+        <div class="col-12 col-sm-9 bg-light">
+            <div class="container-fluid" id="aboutme-dnld">
+                <div class="row  mx-4 my-4">
+                    <div class="col-4">
+                        <h1 class="text-danger">ABOUT ME</h1>
+                    </div>
+                    <div class="col-8" dir="rtl">
+                        <p>
+                            <a href="#"
+                               class="text-decoration-none text-light  border border-primary bg-primary text-center rounded p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-download mx-1" viewBox="0 0 16 16">
+                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                                </svg>
+                                <small>Download Resume</small>
+                            </a>
+                        </p>
+
+                    </div>
                 </div>
-                <!-- Copyright -->
-            </footer>
+
+            </div>
+            <div class="container-fluid" id="content">
+                <div class="row mx-4 my-4 text-dark">
+                    <h5>
+                        Hi everyone.<br>
+                        My name is Mohammad Hosein and as you know I'm a web developer.<br>
+                        It's an honor to service you, so if you need a website there is someone out there that can help
+                        you.<br>
+                        There is my extra information.<br><br><br><br>
+
+                    </h5>
+
+                </div>
+            </div>
+            <div class="container-fluid" id="birthday">
+                <div class="row mx-4 my-5">
+                    <p><b>Birthday: </b>01/04/1378</p>
+                    <p><b>Location: </b>Iran, Tehran, Lavizan</p>
+                    <p><b>Email: </b><a href="https://mohammad.h_78@yahoo.com">mohammad.h_78@yahoo.com</a></p>
+                    <p><b>Phone: </b>+98 930 92 91 93 4</p><br><br><br>
+
+                </div>
+            </div>
+            <div class="container" id="python">
+                <div class="row mx-4 mt-4">
+                    <div class="col-10"><h6>Python</h6></div>
+                    <div class="col-2"><h6>60%</h6></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                        60% Complete
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="django">
+                <div class="row mx-4 mt-4">
+                    <div class="col-10"><h6>Django</h6></div>
+                    <div class="col-2"><h6>10%</h6></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="10"
+                         aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                        10% Complete
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
-    <div class="col-12 col-sm-9 bg-light" style="width: 100px">
-
-    </div>
 </div>
-
 </body>
+</html>

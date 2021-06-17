@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="text-align: center;">
+<form>
+    <p>Select picture's <b>Width and Height</b>:</p>
+    <input type="range" id="wh" name="Width and Height" value="200"
+           min="150" max="800" oninput="wh1(this.value)">
+    <label for="wh"></label>
+
+    <p>Select your <b>filter</b>:</p>
+    <input type="radio" id="filter1" name="filter" onclick="myFunction1()">
+    <label for="filter1">blur</label>
+    <input type="radio" id="filter2" name="filter" onclick="myFunction2()">
+    <label for="filter2">red shadow</label><br>
+    <input type="radio" id="filter3" name="filter" onclick="myFunction3()">
+    <label for="filter3">black & white</label>
+    <input type="radio" id="filter4" name="filter" onclick="myFunction4()">
+    <label for="filter4">invert</label><br>
+    <button onclick="myFunction()">Change picture to default</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("pic").style = "";
+        }
+
+        function myFunction1() {
+            document.getElementById("pic").style = "filter: blur(4px)";
+        }
+
+        function myFunction2() {
+            document.getElementById("pic").style = "filter: drop-shadow(20px 20px 20px red)";
+        }
+
+        function myFunction3() {
+            document.getElementById("pic").style = "filter: grayscale(100%)";
+        }
+
+        function myFunction4() {
+            document.getElementById("pic").style = "filter: invert(100%)";
+        }
+
+        function wh1(x) {
+            document.getElementById("pic").width = x;
+        }
+
+    </script>
+
+</form>
+
+<br><img src="rainbow.jpg" alt="rainbow" id="pic" width="200" height=width>
+
+</body>
+</html>
+

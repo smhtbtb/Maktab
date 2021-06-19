@@ -1457,7 +1457,7 @@ true posixrules
 13111||-9223372036854775808|U|G
 13111||10|U|G</Grants>
       <Owner>test</Owner>
-      <IntrospectionStateNumber>2328</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2516</IntrospectionStateNumber>
       <Relations>sequence|table|41498|41500|1
 sequence|table|41509|41511|1
 sequence|table|41517|41519|1
@@ -1492,7 +1492,7 @@ sequence|table|41543|41545|1
 13111||-9223372036854775808|U|G
 13111||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2333</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2504</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|41467|41469|1
 sequence|table|41788|41790|1
@@ -1572,7 +1572,7 @@ sequence|table|41788|41790|1
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2329</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2518</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="27" parent="6" name="plpgsql">
@@ -1688,7 +1688,7 @@ sequence|table|41788|41790|1
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2334</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2505</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="42" parent="10" name="plpgsql">

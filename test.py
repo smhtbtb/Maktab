@@ -800,12 +800,37 @@
 #
 #
 #
-
-
-
-
-
-
-
-
-
+# import psycopg2
+#
+# conn = psycopg2.connect(database='lab', user='test', password='12345', port='5432', host='185.239.106.39')
+# n = 371776252
+# t = 'corona'
+# cur = conn.cursor()
+#
+# str1 = f"select id from lab.public.test where name='{t}';"
+# cur.execute(str1)
+# tt = cur.fetchone()[0]
+# print(tt)
+#
+# str2 = f"select id from lab.public.person where national_code='{n}';"
+# cur.execute(str2)
+# nn = cur.fetchone()[0]
+# print(nn)
+#
+# str3 = f"insert into test_answer(person_id, request_date, answer_date) values ({nn}, '2020-05-02', '2020-05-05');"
+# cur.execute(str3)
+# ta = cur.fetchone()[0]
+# print(ta)
+#
+# conn.commit()
+# cur.close()
+# conn.close()
+#
+#
+#
+#
+#
+#
+ll = [1, 2, 3, 4, 5, 6, 7, 8]
+for i in range(0, len(ll), 2):
+    print(f'{ll[i]} {ll[i+1]}')

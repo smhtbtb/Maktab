@@ -1,0 +1,14 @@
+|----------id----------|---------name---------|-----description------|------parent_id-------
+|          1           |        corona        | a test for covid-19  |         None         
+|          2           |         cbc          |         test         |         None         
+|          3           |      blood test      |       no desc        |         None         
+|          4           |     Blood sugar      |   for Blood sugar    |         None         
+|          5           |       aya test       |       my test        |         None         
+|          34          |       corono3        |         None         |         None         
+|          6           |      SugarBlood      |      sugarblood      |         None         
+|          9           |         HIV          |       hiv test       |         None         
+|          69          |       corona22       |         None         |         None         
+|          32          |       corono4        |         None         |         None         
+|          35          |    checkup omoomi    |         None         |         None         
+|          36          |     teste etiad      |         None         |          35          
+|          37          |   salamat jesmani    |         None         |          35          

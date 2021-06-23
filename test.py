@@ -831,6 +831,12 @@
 #
 #
 #
-ll = [1, 2, 3, 4, 5, 6, 7, 8]
-for i in range(0, len(ll), 2):
-    print(f'{ll[i]} {ll[i+1]}')
+import psycopg2
+
+conn = psycopg2.connect('host=localhost dbname=lab user=postgres password=1234567890 port=5432')
+cur = conn.cursor()
+cur.execute('select * from person')
+print(cur.fetchall())
+
+
+

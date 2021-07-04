@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5">
+            <p id="demo" onclick="showDetails()"></p>
+
+            <script>
+            let dbParam = JSON.stringify({table:"customers",limit:20});
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              const myObj = JSON.parse(this.responseText);
+              let text = "<table border='1'>"
+              for (let x in myObj) {
+                  text += "<tr><td>" + myObj[x].firstname + ' * ' + myObj[x].lastname + "</td></tr>";
+
+              }
+              text += "</table>"
+              document.getElementById("demo").innerHTML = text;
+            }
+            xhttp.open("GET", "http://ma-web.ir/maktab52/users.json");
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("x=" + dbParam);
+
+            function showDetails(){
+                const myObj = JSON.parse(this.responseText);
+                document.getElementById("details").innerHTML = `${myObj[1].id}`;
+            }
+            </script>
+            </div>
+        <div class="col-sm-5" id="details">
+
+            hello
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

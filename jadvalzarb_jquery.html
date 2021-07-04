@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+<label for="inp1"></label>
+<input id="inp1" type="number" class="form-control-sm">
+<botton id="my_inp">Enter Num</botton>
+<div id="here_table">
+
+</div>
+
+<script>
+    $(document).ready(function (){
+        $('#my_inp').click(function (){
+            let num = $('#inp1').val();
+
+            $('#here_table').append('<table style="text-align: center;" border="1px solid red">');
+
+            for (let i = 1; i < number+1; i++) {
+                $('#here_table').append('<tr>')
+                for (let j = 1; j < number+1; j++) {
+                    $('#here_table').append('<td>' + i * j + '</td>');
+                }
+                $('#here_table').append('</tr>')
+            }
+
+            $('#here_table').append('</table>');
+           })
+    })
+</script>
+
+</body>
+</html>
